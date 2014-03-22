@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM stackbrew/ubuntu:13.10
 
 RUN apt-get update && apt-get install -y curl
 RUN curl -s https://go.googlecode.com/files/go1.2.1.linux-amd64.tar.gz | tar -v -C /usr/local -xz
